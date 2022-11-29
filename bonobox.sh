@@ -280,7 +280,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 
 	# installation xmlrpc libtorrent rtorrent
 	cd /tmp || exit
-	"$CMDGIT" clone --progress https://github.com/Djedje93/xmlrpc-c.git
+	"$CMDGIT" clone --progress https://github.com/lafouine022/xmlrpc-c.git
 
 	cd xmlrpc-c/stable || exit
 	./configure #--disable-cplusplus
@@ -290,8 +290,8 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 
 	# clone rtorrent et libtorrent
 	cd /tmp || exit
-	"$CMDGIT" clone --progress https://github.com/rakshasa/libtorrent.git
-	"$CMDGIT" clone --progress https://github.com/rakshasa/rtorrent.git
+	"$CMDGIT" clone --progress https://github.com/lafouine022/libtorrent.git
+	"$CMDGIT" clone --progress https://github.com/lafouine022/rtorrent.git
 
 	# compilation libtorrent
 	cd libtorrent || exit
@@ -323,12 +323,12 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 	"$CMDCP" -R "$BONOBOX"/base "$NGINXBASE"
 
 	# téléchargement et déplacement de rutorrent
-	"$CMDGIT" clone --progress https://github.com/Djedje93/ruTorrent.git "$RUTORRENT"
+	"$CMDGIT" clone --progress https://github.com/lafouine022/ruTorrent.git "$RUTORRENT"
 	"$CMDECHO" ""; set "146" "134"; FONCTXT "$1" "$2"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}${CGREEN}$TXT2${CEND}"; "$CMDECHO" ""
 
 	# installation des plugins - thank Micdu70 ;)
 	cd /tmp || exit
-	"$CMDGIT" clone --progress https://github.com/Djedje93/rutorrent-plugins-pack
+	"$CMDGIT" clone --progress https://github.com/lafouine022/rutorrent-plugins-pack
 
 	for PLUGINS in 'addzip' 'chat' 'filemanager' 'filemanager-share' 'toggle_details_button' 'geoip2' 'logoff' 'nfo' 'pausewebui' 'ratiocolor' 'titlebar' 'trackerstatus'; do
 		"$CMDCP" -R /tmp/rutorrent-plugins-pack/"$PLUGINS" "$RUPLUGINS"/
