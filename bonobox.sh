@@ -329,7 +329,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 
 	# installation des plugins - thank Micdu70 ;)
 	cd /tmp || exit
-	"$CMDGIT" clone --progress https://github.com/lafouine022/rutorrent-plugins-pack
+	"$CMDGIT" clone --progress https://github.com/lafouine022/rutorrent-plugins-pack.git
 
 	for PLUGINS in 'addzip' 'chat' 'filemanager' 'filemanager-share' 'toggle_details_button' 'geoip2' 'logoff' 'nfo' 'pausewebui' 'ratiocolor' 'titlebar' 'trackerstatus'; do
 		"$CMDCP" -R /tmp/rutorrent-plugins-pack/"$PLUGINS" "$RUPLUGINS"/
