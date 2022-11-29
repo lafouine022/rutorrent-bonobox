@@ -20,7 +20,7 @@
 # apt-get install git-core -y
 #
 # cd /tmp
-# git clone https://github.com/Djedje93/rutorrent-bonobox
+# git clone https://github.com/lafouine022/rutorrent-bonobox
 # cd rutorrent-bonobox
 # chmod a+x bonobox.sh && ./bonobox.sh
 #
