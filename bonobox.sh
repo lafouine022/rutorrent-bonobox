@@ -652,7 +652,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 				"$CMDECHO" ""; set "202"; FONCTXT "$1"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}"
 				"$CMDECHO" -e "${CYELLOW}https://$IP/rutorrent/${CEND}"
 				"$CMDECHO" ""; "$CMDECHO" ""; set "210"; FONCTXT "$1"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}"
-				"$CMDECHO" -e "${CBLUE}                          Ex_Rat - http://mondedie.fr${CEND}"; "$CMDECHO" ""
+				"$CMDECHO" -e "${CBLUE}                          Ex_Rat - Lafouine022${CEND}"; "$CMDECHO" ""
 				break
 			fi
 
@@ -662,7 +662,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 				"$CMDECHO" ""; set "202"; FONCTXT "$1"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}"
 				"$CMDECHO" -e "${CYELLOW}https://$IP/rutorrent/${CEND}"
 				"$CMDECHO" ""; "$CMDECHO" ""; set "210"; FONCTXT "$1"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}"
-				"$CMDECHO" -e "${CBLUE}                          Ex_Rat - http://mondedie.fr${CEND}"; "$CMDECHO" ""
+				"$CMDECHO" -e "${CBLUE}                          Ex_Rat - Lafouine022${CEND}"; "$CMDECHO" ""
 				"$CMDSYSTEMCTL" reboot
 				break
 			fi
