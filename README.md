@@ -13,7 +13,7 @@ Tiré du tutoriel de mondedie.fr
 
 **Auteur :** Ex_Rat
 
-Merci aux contributeurs: Sophie, Spectre, Hardware, Zarev, SirGato, MiguelSam, Hierra, mog54
+Merci aux contributeurs: Sophie, Spectre, Hardware, Zarev, SirGato, MiguelSam, Hierra, mog54, lafouine022
 
 ## Installation:
 Multilingue automatique
