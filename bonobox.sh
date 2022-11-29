@@ -2,6 +2,7 @@
 #
 # Script d'installation ruTorrent / Nginx
 # Auteur : Ex_Rat
+# Mod : Lafouine022
 #
 # Nécessite Debian 10/11 - 64 bits & un serveur fraîchement installé
 #
@@ -11,7 +12,7 @@
 # Tiré du tutoriel de mondedie.fr disponible ici:
 # https://mondedie.fr/d/10831-tuto-installer-rutorrent-sur-debian-10-nginx-php-fpm
 #
-# Merci aux contributeurs: Sophie, Spectre, Hardware, Zarev, SirGato, MiguelSam, Hierra, mog54.
+# Merci aux contributeurs: Sophie, Spectre, Hardware, Zarev, SirGato, MiguelSam, Hierra, mog54, lafouine022
 #
 # Installation:
 #
