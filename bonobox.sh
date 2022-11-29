@@ -390,9 +390,10 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 	"$CMDCP" -R "$BONOBOX"/theme/ru/Blue "$RUPLUGINS"/theme/themes/Blue
 	"$CMDCP" -R "$BONOBOX"/theme/ru/SpiritOfBonobo "$RUPLUGINS"/theme/themes/SpiritOfBonobo
 	"$CMDGIT" clone --progress https://github.com/themightykitten/ruTorrent-MaterialDesign.git "$RUPLUGINS"/theme/themes/MaterialDesign
+	"$CMDGIT" clone --progress https://github.com/lafouine022/QuickBox-Dark.git "$RUPLUGINS"/theme/themes/QuickBox-Dark
 
 	# configuration thème
-	"$CMDSED" -i "s/defaultTheme = \"\"/defaultTheme = \"Oblivion\"/g;" "$RUPLUGINS"/theme/conf.php
+	"$CMDSED" -i "s/defaultTheme = \"\"/defaultTheme = \"QuickBox-Dark\"/g;" "$RUPLUGINS"/theme/conf.php
 
 	"$CMDECHO" ""; set "148" "134"; FONCTXT "$1" "$2"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}${CGREEN}$TXT2${CEND}"; "$CMDECHO" ""
 
@@ -471,10 +472,6 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 
 	# configuration .rtorrent.rc
 	FONCTORRENTRC "$USER" "$PORT" "$RUTORRENT"
-
-	# torrent welcome
-	"$CMDCP" -f "$FILES"/rutorrent/Welcome.To.Bonobox.nfo /home/"$USER"/torrents/Welcome.To.Bonobox.nfo
-	"$CMDCP" -f "$FILES"/rutorrent/Welcome.To.Bonobox.torrent /home/"$USER"/watch/Welcome.To.Bonobox.torrent
 
 	# permissions
 	"$CMDCHOWN" -R "$USER":"$USER" /home/"$USER"
