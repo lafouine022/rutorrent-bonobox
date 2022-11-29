@@ -1,8 +1,8 @@
 #!/bin/bash
 
-################################################
-# lancement gestion des utilisateurs ruTorrent #
-################################################
+#####################################################
+# lancement gestion des utilisateurs ruTorrent LaLa #
+#####################################################
 
 
 # contrôle installation
