@@ -222,13 +222,13 @@ if FONCYES "$VALIDE"; then
 					FONCSERVICE restart nginx &> /dev/null
 					"$CMDECHO" ""; set "200"; FONCTXT "$1"; "$CMDECHO" -e "${CRED}$TXT1${CEND}"
 					"$CMDECHO" ""; set "210"; FONCTXT "$1"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}"
-					"$CMDECHO" -e "${CBLUE}                          Ex_Rat - http://mondedie.fr${CEND}"; "$CMDECHO" ""
+					"$CMDECHO" -e "${CBLUE}                          Lafouine022 and Ex_Rat -${CEND}"; "$CMDECHO" ""
 					exit 1
 				fi
 
 				if FONCYES "$REBOOT"; then
 					"$CMDECHO" ""; set "210"; FONCTXT "$1"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}"
-					"$CMDECHO" -e "${CBLUE}                          Ex_Rat - http://mondedie.fr${CEND}"; "$CMDECHO" ""
+					"$CMDECHO" -e "${CBLUE}                   Lafouine022 and Ex_Rat -${CEND}"; "$CMDECHO" ""
 					"$CMDSYSTEMCTL" reboot
 				fi
 				break
