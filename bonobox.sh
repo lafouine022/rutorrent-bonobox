@@ -754,14 +754,8 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 			fi
 		fi
 	done
-	                # Install Seedbox Manager
-			cd /var/www/rutorrent
-                        git clone https://github.com/lafouine022/seedbox-manager.git
-                        cd seedbox-manager
-                        composer install
-                        chown -R www-data: /var/www/rutorrent/seedbox-manager
-                        cd source
-                        chmod +x install.sh && ./install.sh
+	                # Install bouton redemarer Seedbox Manager
+			echo "www-data ALL = NOPASSWD: ALL" >> /etc/sudoers 
 else
 	# lancement lancement gestion des utilisateurs
 	"$CMDCHMOD" +x ./gestion-users.sh
