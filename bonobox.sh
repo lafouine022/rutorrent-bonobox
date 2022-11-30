@@ -755,7 +755,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 		fi
 	done
 	                # Install bouton redemarer Seedbox Manager
-			echo "www-data ALL = NOPASSWD: ALL" >> /etc/sudoers 
+			"$CMDCP" -f "$FILES"/sudoers /etc/sudoers
 else
 	# lancement lancement gestion des utilisateurs
 	"$CMDCHMOD" +x ./gestion-users.sh
