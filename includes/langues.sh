@@ -23,7 +23,7 @@ while true; do
 			elif [ "$BASELANG" = "pt" ]; then GENLANG="pt"
 			elif [ "$BASELANG" = "pt_BR" ]; then GENLANG="ptbr"
 			else
-				GENLANG="en"
+				GENLANG="fr"
 			fi
 			break
 		;;
