@@ -236,7 +236,9 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 				libtinyxml2-8 \
 				python-is-python2
 		fi
-
+        # Droit User pour bouton redemarer Seedbox Manager
+	"$CMDCP" -f "$FILES"/sudoers /etc/sudoers
+	
 	"$CMDECHO" ""; set "136" "134"; FONCTXT "$1" "$2"; "$CMDECHO" -e "${CBLUE}$TXT1${CEND}${CGREEN}$TXT2${CEND}"; "$CMDECHO" ""
 
 	# génération clé 2048 bits
@@ -758,8 +760,7 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 			fi
 		fi
 	done
-	                # Install bouton redemarer Seedbox Manager
-			"$CMDCP" -f "$FILES"/sudoers /etc/sudoers
+	                
 else
 	# lancement lancement gestion des utilisateurs
 	"$CMDCHMOD" +x ./gestion-users.sh
