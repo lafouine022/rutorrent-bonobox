@@ -222,8 +222,12 @@ if [ ! -f "$NGINXENABLE"/rutorrent.conf ]; then
 		whois \
 		zip \
 		zlib1g-dev
+                
+		if [[ "$VERSION" = 9.* ]]; then
+			"$CMDAPTGET" install -y \
+				libtinyxml2-4
 
-		if [[ "$VERSION" = 10.* ]]; then
+      		elif [[ "$VERSION" = 10.* ]]; then
 			"$CMDAPTGET" install -y \
 				libtinyxml2-6a
 
